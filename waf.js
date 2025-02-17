@@ -15,7 +15,7 @@ module.exports = function (req,res, next) {
         for (let key in req.query) {
             if (attackPatterns.sqlInjection.test(req.query[key]) || attackPatterns.xss.test(req.query[key])) {
                 console.log("🚨 Attack detected in query:", req.query[key]);
-                return res.status(403).send("⚠️ Potential attack detected and blocked!");
+                return res.status(403).send(" Potential attack detected and blocked!");
             }
         }
         
