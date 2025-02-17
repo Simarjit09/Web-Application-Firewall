@@ -28,8 +28,8 @@ app.get("/", (req, res) => {
 
 // Test route (to simulate attacks)
 app.post("/test", (req, res) => {
-    console.log("✅ Received a POST request to /test"); // Debug log
-    res.send("✅ Your request passed the security check!");
+    console.log(" Received a POST request to /test"); // Debug log
+    res.send(" Your request passed the security check!");
 });
 
 
